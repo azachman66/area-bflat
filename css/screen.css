@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	image-rendering: crisp-edges;
+}
+
+html {
+	font-size: 10px;
+	@media (min-width: 450px) {
+		font-size: 13px;
+	}
+}
+
+body {
+	font-family: "Press Start 2P";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+	line-height: 1.7;
+}
+
+
+
+h1, h2, h3, p.lead {
+	color: primary;
+	margin-bottom: 0.5em;
+}
+
+h1 {
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 1.4em;
+}
+p {
+	max-width: 54ch;
+	& + p {
+		margin-top: 1em;
+	}
+	&.lead {
+		font-size: 1.2em;
+	}
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+	cursor: default;
+}
+.button {
+	background-color: grey;
+	box-shadow: inset -2px -2px rgba(black, 0.25),
+		inset 2px 2px rgba(255, 255, 255, 0.25);
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	padding: 0.5rem 1rem;
+	&:hover {
+		box-shadow: inset -2px -2px rgba(black, 0.4),
+			inset 2px 2px rgba(255, 255, 255, 0.4);
+	}
+	&:active {
+		box-shadow: inset 2px 2px rgba(black, 0.4),
+			inset -2px -2px rgba(255, 255, 255, 0.4);
+	}
+}
+
+.desktop-wrapper {
+	user-select: none;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: primary;
+}
+.desktop {
+	position: relative;
+	flex-grow: 1;
+	background-image: url(http://trinkler-it.ch/img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-height: calc(100vh - 50px);
+	@media screen and (min-width: 309px) {
+		background-size: auto;
+	}
+}
+.bottom-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: grey;
+	padding: 0.5rem;
+	label > img {
+		margin-left: -0.33ch;
+		margin-right: 0.5ch;
+	}
+	.status {
+		display: flex;
+		align-items: center;
+		.sound {
+			cursor: pointer;
+		}
+		#time {
+			padding: 0.5rem;
+		}
+	}
+}
+.start-menu {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	list-style: none;
+	background-color: grey;
+	margin: 0;
+	padding: 0;
+	z-index: 800;
+	box-shadow: inset -2px 0 rgba(black, 0.25),
+		inset 2px 0 rgba(255, 255, 255, 0.5);
+	display: none;
+	> a {
+		color: black;
+		display: block;
+		padding: 1rem;
+		margin: 0 2px;
+		border-bottom: 2px solid rgba(black, 0.15);
+		&:first-child {
+			margin-top: 2px;
+		}
+		&:hover {
+			background-color: primary;
+			color: #fff;
+		}
+		&:active {
+			outline: 1px dotted black;
+		}
+	}
+}
+input#start-menu {
+	display: none;
+	&:checked + .start-menu {
+		display: block;
+	}
+}
+#time {
+	margin-right: 0.5rem;
+}
+
+.icon-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	font-size: 0.8em;
+	width: 10em;
+	height: 10em;
+	cursor: not-allowed;
+}
+.icon {
+	& > img {
+        width: 100%;
+	}
+}
+
+.window {
+	display: none;
+	position: absolute;
+	top: 5vh;
+	left: 5vh;
+	width: calc(100% - 5vh*2);
+	height: calc(100% - 5vh*2 - 50px);
+	max-height: calc(100% - 5vh*2 - 50px);
+	background: #fff;
+	padding: 4px;
+	background: grey;
+	box-shadow: inset -2px -2px rgba(black, 0.25),
+		inset 2px 2px rgba(255, 255, 255, 0.5);
+	overflow: hidden;
+	@media (min-width: 1024px) {
+		width: 50vw;
+	}
+	.window-bar {
+		background: gray;
+		color: #fff;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.5ch;
+		cursor: grab;
+		.window-title {
+			display: flex;
+			align-items: center;
+			& > img {
+				margin-right: 0.5ch;
+			}
+		}
+		&:active {
+			cursor: grabbing;
+		}
+		.close-button {
+			cursor: default;
+			padding: 0.5em;
+			margin: -.25ch;
+		}
+	}
+	.window-inner {
+		position: absolute;
+		height: calc(100% - 3em - 4px*2);
+		width: calc(100% - 4px*2);
+		background: #fff;
+		padding: 1.75rem;
+		user-select: text;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+}
+
+.content-title {
+	margin-bottom: 1rem;
+}
+
+.service-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem;
+	.service {
+		padding: 1rem;
+		min-width: 320px;
+		width: 50%;
+		.service-image {
+			margin-bottom: 1rem;
+		}
+		.service-copy {
+			ul {
+				list-style: url(https://res.cloudinary.com/theyve/image/upload/v1517574656/Trinkler/checkmark.png) outside;
+				padding-left: 1.25rem;
+				li {
+					margin: 0.5em 0;
+				}
+			}
+		}
+	}
+}
+
+
+
+.overlay {
+	position: fixed;
+	top: -100vh;
+	left: 0;
+	background: repeating-linear-gradient(rgba(#fff, .25) 0, transparent 1px, transparent 3px, rgba(black, .25) 4px);
+	width: 100vw;
+	height: 200vh;
+	pointer-events: none;
+	z-index: 999;
+	animation: buzz 1000ms linear infinite;
+	mix-blend-mode: hard-light;
+}
+
+@keyframes buzz {
+	0% {
+		transform: translateY(0) ;
+	}
+	100% {
+		transform: translateY(100vh);
+	}
+}
+
