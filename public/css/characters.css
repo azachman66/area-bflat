@@ -76,3 +76,15 @@ span .nope {
     background-position: center top;
     background-size: 75% auto;
   }
+
+
+  .back {
+    padding: 15px;
+    height: 20px;
+    width: 50px;
+    color: #888;
+  }
+
+  .back:hover {
+    color: #444
+  }
