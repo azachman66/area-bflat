@@ -1,7 +1,6 @@
 // get all folders in our .directory-list
 var allFolders = $(".directory-list li > ul");
-allFolders.each(function() {
-
+allFolders.each(function () {
   // add the folder class to the parent <li>
   var folderAndName = $(this).parent();
   folderAndName.addClass("folder");
@@ -16,7 +15,7 @@ allFolders.each(function() {
   folderAndName.append(backupOfThisFolder);
 
   // now add a slideToggle to the <a> we just added
-  folderAndName.find("a").click(function(e) {
+  folderAndName.find("a").click(function (e) {
     $(this).siblings("ul").slideToggle("slow");
     e.preventDefault();
   });
