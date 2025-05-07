@@ -79,6 +79,7 @@ body {
   .back {
     padding: 15px;
     color: #888;
+    text-align: left
   }
 
   .back:hover {
