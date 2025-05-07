@@ -16,6 +16,8 @@ body {
 
 .directory-list {
     text-align: left;
+    padding: 20px;
+    background-color: #fff;
 }
 
 .directory-list ul {
