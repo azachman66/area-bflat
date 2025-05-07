@@ -40,6 +40,10 @@ body {
   cursor: zoom-in;
 }
 
+button .btn {
+  cursor: zoom-in;
+}
+
 p {
   text-align: center;
   color: #555;
