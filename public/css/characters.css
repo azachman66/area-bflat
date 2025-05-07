@@ -16,7 +16,7 @@ body {
     height: 100vh;
 }
 
-span .nope {
+.nope {
     cursor: not-allowed;
 }
 
