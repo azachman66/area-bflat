@@ -14,6 +14,10 @@ body {
     cursor: not-allowed;
 }
 
+.directory-list {
+    text-align: left;
+}
+
 .directory-list ul {
     margin-left: 10px;
     padding-left: 20px;
@@ -74,11 +78,9 @@ body {
 
   .back {
     padding: 15px;
-    height: 20px;
-    width: 50px;
     color: #888;
   }
 
   .back:hover {
-    color: #444
+    color: #444;
   }
