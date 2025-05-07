@@ -23,6 +23,7 @@ body {
   z-index: 1;
   width: auto;
   height: 500px;
+  cursor: help;
 }
 
 .poster {
@@ -36,6 +37,7 @@ body {
   transform: perspective(200px) rotateY(8deg);
   transform-style: flat;
   border: 1px solid #000;
+  cursor: zoom-in;
 }
 
 p {
