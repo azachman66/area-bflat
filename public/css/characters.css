@@ -8,6 +8,7 @@ body {
     background-color: aquamarine;
     width: 100vw;
     height: 100vh;
+    padding: 15px;
 }
 
 .nope {
@@ -15,21 +16,34 @@ body {
 }
 
 .directory-list {
+    margin-left: 15px;
     text-align: left;
-    padding: 20px;
+    padding: 15px;
     background-color: #fff;
     width: 50%;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px;
 }
 
 .directory-list h2 {
     font-size: 24px;
     font-style: normal;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
+    margin: 0;
 }
 
 .directory-list ul {
+    font-size: 18px;
     margin-left: 10px;
     padding-left: 20px;
     border-left: 1px dashed #ddd;
@@ -38,7 +52,7 @@ body {
   .directory-list li {
     list-style: none;
     color: #888;
-    font-size: 17px;
+    font-size: 14px;
     font-style: italic;
     font-weight: normal;
   }
