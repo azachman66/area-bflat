@@ -26,6 +26,7 @@ body {
 .directory-list h2 {
     font-size: 24px;
     font-style: normal;
+    text-align: center;
 }
 
 .directory-list ul {
