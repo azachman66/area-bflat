@@ -20,6 +20,12 @@ body {
     background-color: #fff;
     width: 50%;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.directory-list h2 {
+    font-size: 24px;
+    font-style: normal;
 }
 
 .directory-list ul {
