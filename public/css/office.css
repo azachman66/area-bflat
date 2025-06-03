@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/assets/office.jpg");
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.computer {
+	position: absolute;
+	top: 175px;
+  	left: 700px;
+  	z-index: 1;
+	cursor: zoom-in;
+}
+
+.computer img {
+	width: 200px;
+  	height: 150px;
+	cursor: zoom-in;
+}
+
+.officeDoor {
+	position: absolute;
+	top: 0;
+  	left: 50px;
+  	z-index: 1;
+	cursor: help;
+}
+
+.officeDoor img {
+	width: auto;
+  	height: 300px;
+	cursor: help;
+}

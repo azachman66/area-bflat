@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AREA B-FLAT | Main Hallway</title>
-    <link href="../css/index.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/cc94091a67.js" crossorigin="anonymous"></script>
@@ -13,12 +13,12 @@
 </head>
 <body>
 <div class="doors">
-  <a href="/home.html" title="ENTER?"><img src="../img/assets/double_doors1.jpg"></a>
+  <a href="pages/home.html" data-bs-toggle="tooltip" data-bs-title="ENTER?" style="cursor: help;"><img src="img/assets/double_doors1.jpg"></a>
 </div>
-<div class="poster-outer">
+
 <div class="poster">
   <!-- Button trigger modal -->
-<button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" title="READ CLOSER?" style="cursor: zoom-in;">
+<button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: zoom-in;">
 <!-- <p><b>IMPORTANT</b><br><br>
 1. click me to view click me to view click me to view<br><br>
 2. or hover for a prompt, this is clickable<br><br>
@@ -26,7 +26,7 @@
 4. this poster button does not actually say anything important<br><br>
 5. read closer? read closer? read closer?
 </p> -->
-<img src="../img/assets/poster.jpg" style="width: 150px; height: 200px; cursor: zoom-in;">
+<img src="img/assets/poster.jpg" data-bs-toggle="tooltip" data-bs-title="READ CLOSER?" style="width: 150px; height: 200px;">
 </button>
 </div>
 
@@ -49,14 +49,10 @@
     </div>
   </div>
 </div>
-</div>
-<!-- <script>
-  const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
 
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
-</script> -->
+<script>
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
 </body>
 </html>
