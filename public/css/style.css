@@ -43,7 +43,7 @@ header img {
 /*GENERAL*/
 .back {
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 a .back-button {
