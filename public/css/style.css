@@ -93,15 +93,6 @@ a .back-button:hover {
   width: 100%;
 }
 
-/* link colors */
-a {
-      color: #000000;
-    }
-
-a:hover {
-      color: #DA5437;
-    }
-
 /* HEADER */
 header #nav {
   background-color: #ffffff;
