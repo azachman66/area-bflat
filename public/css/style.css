@@ -38,6 +38,23 @@ header img {
   font-size: large;
 }
 
+
+
+/*GENERAL*/
+.back {
+  position: relative;
+}
+
+a .back-button {
+  position: fixed;
+  font-size: 24px;
+  color: #00000079;
+  text-decoration: none;
+}
+
+a .back-button:hover {
+  color: #000000;
+}
 /* STYLING FOR SUBPAGES (about, characters, etc) */
 
 /*general*/

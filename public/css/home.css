@@ -1,0 +1,54 @@
+body, div, main, section, article {
+  box-sizing: border-box; 
+}
+
+/* universal background color */
+body {
+  background-color: #fff;
+  background-image: url('public/img/assets/band_room_stock.jpg');
+  background-repeat: no-repeat;
+  background-position: top middle;
+  background-size: cover;
+}
+
+.leftDoor {
+	position: absolute;
+	top: 0;
+  	left: 50px;
+  	z-index: 1;
+	cursor: help;
+}
+
+.leftDoor img {
+	width: auto;
+  	height: 300px;
+	cursor: help;
+}
+
+.rightDoor {
+    position: absolute;
+	top: 0;
+  	left: 50px;
+  	z-index: 1;
+	cursor: help;
+}
+
+.rightDoor img {
+	width: auto;
+  	height: 300px;
+	cursor: help;
+}
+
+.musicStand {
+position: absolute;
+	top: 0;
+  	left: 50px;
+  	z-index: 1;
+	cursor: help;
+}
+
+.musicStand img {
+	width: auto;
+  	height: 300px;
+	cursor: help;
+}
