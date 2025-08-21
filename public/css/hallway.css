@@ -1,11 +1,6 @@
-body, div, main, section, article {
-  box-sizing: border-box; 
-}
-
-/* universal background color */
 body {
   background-color: #fff;
-  background-image: url('..\img\assets\band_room_stock.jpg');
+  background-image: url('..\img\assets\hallway3.jpg');
   background-repeat: no-repeat;
   background-position: top middle;
   background-size: cover;
@@ -34,20 +29,6 @@ body {
 }
 
 .rightDoor img {
-	width: auto;
-  	height: 300px;
-	cursor: help;
-}
-
-.musicStand {
-position: absolute;
-	top: 50px;
-  	left: 50px;
-  	z-index: 1;
-	cursor: help;
-}
-
-.musicStand img {
 	width: auto;
   	height: 300px;
 	cursor: help;
