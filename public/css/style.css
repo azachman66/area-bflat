@@ -46,14 +46,14 @@ header img {
   z-index: 4;
 }
 
-a .back-button {
+a .backButton {
   position: fixed;
   font-size: 50px;
   color: #00000079;
   text-decoration: none;
 }
 
-a .back-button:hover {
+a .backButton:hover {
   color: #000000;
 }
 /* STYLING FOR SUBPAGES (about, characters, etc) */
