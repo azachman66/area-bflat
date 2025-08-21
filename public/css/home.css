@@ -41,7 +41,7 @@ body {
 
 .musicStand {
 position: absolute;
-	top: 0;
+	top: 50px;
   	left: 50px;
   	z-index: 1;
 	cursor: help;
