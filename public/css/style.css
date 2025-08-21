@@ -43,11 +43,12 @@ header img {
 /*GENERAL*/
 .back {
   position: relative;
+  z-index: 2;
 }
 
 a .back-button {
   position: fixed;
-  font-size: 24px;
+  font-size: 50px;
   color: #00000079;
   text-decoration: none;
 }
