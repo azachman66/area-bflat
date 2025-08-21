@@ -1,6 +1,6 @@
 body {
   background-color: #fff;
-  background-image: url('..\img\assets\hallway3.jpg');
+  background-image: url('../img/assets/hallway3.jpg');
   background-repeat: no-repeat;
   background-position: top middle;
   background-size: cover;
