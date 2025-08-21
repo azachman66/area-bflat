@@ -14,7 +14,7 @@ body {
 .leftDoor {
 	position: absolute;
 	top: 0;
-  	left: 50px;
+  	left: 25px;
   	z-index: 1;
 	cursor: help;
 }
@@ -28,7 +28,7 @@ body {
 .rightDoor {
     position: absolute;
 	top: 0;
-  	left: 100px;
+  	left: 300px;
   	z-index: 1;
 	cursor: help;
 }
