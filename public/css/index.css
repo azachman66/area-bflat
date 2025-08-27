@@ -17,8 +17,8 @@ body {
 }
 
 .doors {
-  position:absolute;
-  top: 125px;
+  position: fixed;
+  top: 100px;
   left: 150px;
   z-index: 1;
   width: auto;
@@ -27,7 +27,7 @@ body {
 }
 
 .poster {
-  position: absolute;
+  position: fixed;
   top: 250px;
   right: 500px;
   width: 150px;

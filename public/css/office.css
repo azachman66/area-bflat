@@ -17,7 +17,7 @@ body {
 }
 
 .computer {
-	position: absolute;
+	position: fixed;
 	top: 175px;
   	left: 700px;
   	z-index: 1;
@@ -31,7 +31,7 @@ body {
 }
 
 .officeDoor {
-	position: absolute;
+	position: fixed;
 	top: 0;
   	left: 50px;
   	z-index: 1;
