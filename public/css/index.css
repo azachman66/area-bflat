@@ -10,12 +10,7 @@ body, div, main, section, article {
 /* universal background color */
 body {
   background-color: #fff;
-}
-
-img {
-  width: 100vw;
-  position: fixed;
-}
+}}
 
 .doors {
   position: relative;
