@@ -46,8 +46,6 @@
 </div>
 
 <script>
-$('img[usemap]').rwdImageMaps();
-
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
@@ -85,6 +83,7 @@ board.addEventListener('mouseout', () => {
   element.title = ''; // Reset to original
 });
 
+$('img[usemap]').rwdImageMaps();
 </script>
 </body>
 </html>
