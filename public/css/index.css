@@ -13,7 +13,7 @@ body {
 }
 
 img {
-  background-position: fill;
+  max-width: max-content;
 }
 
 .doors {
