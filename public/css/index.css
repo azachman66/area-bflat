@@ -10,10 +10,10 @@ body, div, main, section, article {
 /* universal background color */
 body {
   background-color: #fff;
-  background-image: url('../img/assets/main_background.png');
-  background-repeat: no-repeat;
-  background-position: top middle;
-  background-size: cover;
+}
+
+img {
+  background-position: fill;
 }
 
 .doors {
@@ -226,4 +226,3 @@ footer a:hover {
 html, body {
   margin: 0;
 }
-
