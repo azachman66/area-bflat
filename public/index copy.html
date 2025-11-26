@@ -17,8 +17,18 @@
 <body>
 <div class="container" style="width: 100vw">
 
-<a id="boardPop" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Old Bulletin Board" data-bs-content="It's an old bulletin board filled with outdated posters."></a>
-<a id="chairsPop" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Chairs" data-bs-content="A row of plastic chairs, complete with a fake potted plant. Cozy!"></a>
+<div class="pop" id="boardPop" popover="auto">
+  <div class="card w-75 p-2" style="background-color: rgba(0, 0, 0, 0.5); border: 3px solid #5c5c5c">
+    <div class="card-title">Old Bulletin Board</div>
+    <div class="card-body">It's an old bulletin board filled with outdated posters.</div>
+  </div>
+</div>
+<div class="pop" id="chairsPop" popover="auto">
+  <div class="card w-75 p-2" style="background-color: rgba(0, 0, 0, 0.5); border: 3px solid #5c5c5c">
+    <div class="card-title">Chairs</div>
+    <div class="card-body">A row of plastic chairs, complete with a fake potted plant. Cozy!</div>
+  </div>
+</div>
 
 <img src="img\assets\AB-FLAT_index.png" style="object-fit: contain;" usemap="#map-index">
 
