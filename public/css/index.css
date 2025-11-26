@@ -12,6 +12,12 @@ body {
   background-color: #fff;
 }
 
+.container {
+  width: 100%;
+  background: #fff;
+  margin: 0 auto;
+}
+
 div popover .pop {
   position: absolute;
   top: 0;
