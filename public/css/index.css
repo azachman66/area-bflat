@@ -12,6 +12,17 @@ body {
   background-color: #fff;
 }
 
+.pop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 20vw;
+  background-color: #00000083;
+  border: 3px solid #555;
+  border-radius: 5px;
+}
+
 .doors {
   position: relative;
   top: 100px;

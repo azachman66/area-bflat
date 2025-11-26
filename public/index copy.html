@@ -15,22 +15,18 @@
         crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container" style="width: 100vw">
+<div class="container" style="max-width: 100vw;">
 
-<div class="pop" id="boardPop" popover="auto">
-  <div class="card w-75 p-2" style="background-color: rgba(0, 0, 0, 0.5); border: 3px solid #5c5c5c">
-    <div class="card-title">Old Bulletin Board</div>
-    <div class="card-body">It's an old bulletin board filled with outdated posters.</div>
-  </div>
+<div class="pop" id="boardPop" popover>
+    <h2>Old Bulletin Board</h2>
+    <p>It's an old bulletin board filled with outdated posters.</p>
 </div>
-<div class="pop" id="chairsPop" popover="auto">
-  <div class="card w-75 p-2" style="background-color: rgba(0, 0, 0, 0.5); border: 3px solid #5c5c5c">
-    <div class="card-title">Chairs</div>
-    <div class="card-body">A row of plastic chairs, complete with a fake potted plant. Cozy!</div>
-  </div>
+<div class="pop" id="chairsPop" popover>
+    <h2>Chairs</h2>
+    <p>A row of plastic chairs, complete with a fake potted plant. Cozy!</p>
 </div>
 
-<img src="img\assets\AB-FLAT_index.png" style="object-fit: contain;" usemap="#map-index">
+<img src="img\assets\AB-FLAT_index.png" style="object-fit: cover;" usemap="#map-index">
 
 <map name="map-index">
     <area id="doors" target="_self" alt="doors" data-bs-title="ENTER?" style="cursor: help;" href="pages\home.html" coords="302,197,1961,427,1964,1899,305,1977" shape="poly">
