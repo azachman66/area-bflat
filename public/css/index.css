@@ -12,7 +12,7 @@ body {
   background-color: #fff;
 }
 
-.pop {
+div popover .pop {
   position: absolute;
   top: 0;
   left: 0;
