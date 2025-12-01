@@ -18,14 +18,14 @@ body {
   background: #fff;
 }
 
-.links {
+/* .links {
   width: 100vw;
   height: auto;
-}
+} */
 
 .links a {
   opacity: 0;
-  stroke: #000;
+  stroke: #333333;
   stroke-width: 3;
   fill: rgba(171, 171, 171, 0.45);
   transition: all .25s ease-in-out;
