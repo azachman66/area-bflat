@@ -14,9 +14,8 @@
         crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="pop" id="boardPop" popover>
-    <h3>Old Bulletin Board</h3>
-    <p style="font-size: 16px;">It's an old bulletin board filled with outdated posters.</p>
+<div id="boardPop"><a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Old Bulletin Board" data-bs-content="It's an old bulletin board filled with outdated posters.">
+    </a>
 </div>
 <div class="pop" id="chairsPop" popover>
     <h3>Chairs</h3>
@@ -99,10 +98,16 @@
 
 // const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 // const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-// const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-// const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
 
-const chairs = document.getElementById('chairs');
+
+const popover = new bootstrap.Popover('.popover-dismiss', {
+  trigger: 'focus'
+})
+
+
+// const chairs = document.getElementById('chairs');
 // chairs.addEventListener('mouseover', () => {
 //   chairs.style.cursor = 'help';
 // });
@@ -110,12 +115,12 @@ const chairs = document.getElementById('chairs');
 //   chairs.title = '';
 // });
 
-function chairsPopover() {
-chairs.addEventListener('click', () => {
-  const chairsPop = document.getElementById('chairsPop');
-  chairsPop.style.display = 'block';
-});
-};
+// function chairsPopover() {
+// chairs.addEventListener('click', () => {
+//   const chairsPop = document.getElementById('chairsPop');
+//   chairsPop.style.display = 'block';
+// });
+// };
 
 // const poster = document.getElementById('poster');
 // poster.addEventListener('mouseover', () => {
@@ -126,7 +131,7 @@ chairs.addEventListener('click', () => {
 //   poster.title = '';
 // });
 
-const board = document.getElementById('board');
+// const board = document.getElementById('board');
 // board.addEventListener('mouseover', () => {
 //   // Code to execute when mouse enters the element (and its children)
 //   board.title = 'TAKE A LOOK?';
@@ -137,12 +142,12 @@ const board = document.getElementById('board');
 //   board.title = ''; // Reset to original
 // });
 
-function boardPopover() {
-board.addEventListener('click', () => {
-  const boardPop = document.getElementById('boardPop');
-  boardPop.style.display = 'block';
-});
-};
+// function boardPopover() {
+// board.addEventListener('click', () => {
+//   const boardPop = document.getElementById('boardPop');
+//   boardPop.style.display = 'block';
+// });
+// };
 
 // $(document).ready(function() {
 //     $('map').imageMapResize();
