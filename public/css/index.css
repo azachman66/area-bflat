@@ -18,12 +18,12 @@ body {
   margin: 0 auto;
 }
 
-#links a {
+g #links a {
   opacity: 0;
   transition: all .25s ease-in-out;
 }
 
-#links a:hover {
+g #links a:hover {
   opacity: 1;
 }
 
@@ -38,7 +38,7 @@ body {
   border-radius: 5px;
 }
 
-.doors {
+/* .doors {
   position: relative;
   top: 100px;
   left: 150px;
@@ -60,7 +60,7 @@ body {
   transform-style: flat;
   border: 1px solid rgba(171, 171, 171, 0.439);
   cursor: zoom-in;
-}
+} */
 
 /* p {
   text-align: center;
@@ -70,14 +70,14 @@ body {
 } */
 
 /* clearfix hack to prevent image overflow. check out the W3Schools page on it. */
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 
-/* body font */
+/* body font
 .subPage p, footer, #authorNotes, .archiveTable {
   font-family: 'Open Sans', sans-serif;
   font-size: large;
@@ -87,7 +87,7 @@ body {
 
 /*general*/
 
-.subPage {
+/* .subPage {
   width: 1000px;
   max-width: 98%;
   background-color: #ffffff;
@@ -102,46 +102,46 @@ body {
 }
 
 /* for pictures displayed to the left */
-.leftPic {
+/* .leftPic {
   clear: left;
   float:right;
   margin-left:20px;
-}
+} */
 
 /* for pictures displayed to the left */
-.rightPic {
+/* .rightPic {
   clear: right;
   float:left;
   margin-left:20px;
-}
+} */
 
 /* specific to Characters */
-.charTable, .charTable td { 
+/* .charTable, .charTable td { 
   width: 100%;
-}
+} */
 
 /* link colors */
-a {
+/* a {
       color: #000000;
     }
 
 a:hover {
       color: #DA5437;
-    }
+    } */
 
 /* HEADER */
-header #nav {
+/* header #nav {
   background-color: #ffffff;
   outline: 3px solid #000000;
   font-size: 20px;
   width: 98%;
   margin: auto;
-}
+} */
 
 /* HOMEPAGE */
 
 /* style nav button images */
-.comicNav {
+/* .comicNav {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -152,16 +152,16 @@ header #nav {
   width: 80px;
   max-width: 98%;
   padding-right: 30px;
-}
+} */
 
 /* style comic page image */
-.comicPage img {
+/* .comicPage img {
   width: 900px;
   max-width: 98%;
-}
+} */
 
 /* style author notes */
-#authorNotes {
+/* #authorNotes {
   background-color:#ffffff;
   outline: 3px solid #000000;
   margin: auto;
@@ -169,25 +169,25 @@ header #nav {
   padding-top: 0px;
   width: 900px;
   max-width: 98%;
-}
+} */
 
 /* ARCHIVE PAGE */
 
 /* style table in which archive is displayed */
-.archiveTable {
+/* .archiveTable {
   width: 90%;
   border-collapse:collapse;
-}
+} */
 
 /* style archive table cells */
-.archiveTable td {
+/* .archiveTable td {
   padding: 3px;
   vertical-align: center;
   
-}
+} */
 
 /* style table cell in which page title is displayed */
-.archiveCellTitle:not(.leftAlignTableText) {
+/* .archiveCellTitle:not(.leftAlignTableText) {
   max-width: 300px;
   text-align: center;
 }
@@ -200,39 +200,39 @@ header #nav {
 .archiveCellNum {
   text-align: center;
   min-width: 30px;
-}
+} */
 
 /* style the thumbnails on the archive page */
-.archiveCellThumb {
+/* .archiveCellThumb {
     width: 500px;
     max-width: 60px;
 }
 .archiveCellThumb img{
     max-width: 100%;
-  }
+  } */
 
 /* for left aligning the text in a table cell */
-.leftAlignTableText td {
-  text-align: left;
-}
+/* .leftAlignTableText td {
+  text-align: left; */
+/* } */
 
 /* highlight a table row and make pointer into hand when moused over */
-.archiveRow:hover {
+/* .archiveRow:hover {
   background-color: #DA5437;
   cursor: pointer;
-}
+} */
 
 /* FOOTER */
-footer {
+/* footer {
   color: #421a1a;
   margin-top: 12px;
   margin-bottom: 15px;
   float: left;
   width: 100%;
   font-size: 12px;
-}
+} */
 
-footer p {
+/* footer p {
   margin: auto;
 }
 
@@ -241,10 +241,10 @@ footer a {
 }
 
 footer a:hover {
-  color: #868d26
-}
+  color: #868d26 */
+/* } */
 
 /* take away margins from the edges of the screen */
-html, body {
+/* html, body {
   margin: 0;
-}
+} */
