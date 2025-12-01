@@ -18,12 +18,12 @@ body {
   margin: 0 auto;
 }
 
-g #links a {
+g .links a {
   opacity: 0;
   transition: all .25s ease-in-out;
 }
 
-g #links a:hover {
+g .links a:hover {
   opacity: 1;
 }
 

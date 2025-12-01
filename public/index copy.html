@@ -14,14 +14,6 @@
         crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="boardPop"><a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Old Bulletin Board" data-bs-content="It's an old bulletin board filled with outdated posters.">
-    </a>
-</div>
-<div class="pop" id="chairsPop" popover>
-    <h3>Chairs</h3>
-    <p style="font-size: 16px;">A row of plastic chairs, complete with a fake potted plant. Cozy!</p>
-</div>
-
 <svg
    version="1.1"
    id="svg1"
@@ -29,9 +21,9 @@
    width="100%"
    height="auto"
    viewBox="0 0 3840 2160">
-  <g id="links">
+  <g class="links" id="links">
   <g title="SIT DOWN?">
-  <a id="chairs" xlink:title="SIT DOWN?" xlink:href="javascript:chairsPopover()">
+  <a id="chairs" tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Chairs" data-bs-content="A row of plastic chairs, complete with a fake potted plant. Cozy!">
     <path
      stroke="#000000" stroke-width="3"
      fill="rgba(171, 171, 171, 0.45)"
@@ -40,7 +32,7 @@
   </a>
   </g>
   <g title="TAKE A LOOK?">
-  <a id="board" tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Old Bulletin Board" data-bs-content="It's an old bulletin board filled with outdated posters." xlink:title="TAKE A LOOK?" xlink:href="javascript:boardPopover()">
+  <a id="board" tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Old Bulletin Board" data-bs-content="It's an old bulletin board filled with outdated posters.">
     <path
     stroke="#000000" stroke-width="3"
      fill="rgba(171, 171, 171, 0.45)"
