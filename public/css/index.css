@@ -17,7 +17,7 @@ body {
   height: auto;
   background: #fff;
   background-image: url('../img/assets/AB-FLAT_index.png');
-  background-size: max-width;
+  background-size: fill;
 }
 
 /* .links {
