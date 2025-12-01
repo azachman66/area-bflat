@@ -18,7 +18,16 @@ body {
   margin: 0 auto;
 }
 
-div popover .pop {
+#links a {
+  opacity: 0;
+  transition: all .25s ease-in-out;
+}
+
+#links a:hover {
+  opacity: 1;
+}
+
+.pop {
   position: absolute;
   top: 0;
   left: 0;
@@ -49,16 +58,16 @@ div popover .pop {
   background-size: fill;
   transform: perspective(200px) rotateY(8deg);
   transform-style: flat;
-  border: 1px solid #000;
+  border: 1px solid rgba(171, 171, 171, 0.439);
   cursor: zoom-in;
 }
 
-p {
+/* p {
   text-align: center;
   color: #555;
   font-size: 6px;
   text-shadow: 1px 1px 2px #000;
-}
+} */
 
 /* clearfix hack to prevent image overflow. check out the W3Schools page on it. */
 .clearfix::after {
