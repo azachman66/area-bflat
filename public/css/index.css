@@ -23,7 +23,7 @@ body {
   height: auto;
 } */
 
-.links a {
+#links a {
   opacity: 0;
   stroke: #333333;
   stroke-width: 3;
@@ -31,7 +31,7 @@ body {
   transition: all .25s ease-in-out;
 }
 
-.links a:hover {
+#links a:hover {
   opacity: 1;
 }
 
