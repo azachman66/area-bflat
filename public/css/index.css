@@ -12,10 +12,10 @@ body {
   background-color: #fff;
 }
 
-.container {
-  width: 100%;
+.imageMap {
+  width: 100vw;
+  height: auto;
   background: #fff;
-  margin: 0 auto;
 }
 
 g .links a {
