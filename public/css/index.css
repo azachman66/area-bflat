@@ -25,9 +25,9 @@ body {
 
 #links a {
   opacity: 0;
-  stroke: #333333;
+  stroke: #ffffff;
   stroke-width: 3;
-  fill: rgba(171, 171, 171, 0.45);
+  fill: rgba(203, 203, 203, 0.45);
   transition: all .25s ease-in-out;
 }
 
@@ -42,7 +42,7 @@ body {
   width: 50%;
   height: 20vw;
   background-color: #00000083;
-  border: 3px solid #555;
+  border: 3px solid #333;
   border-radius: 5px;
 }
 
