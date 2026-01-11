@@ -19,11 +19,11 @@ body {
     cursor: not-allowed;
 }
 
-.nope a {
+a .nope {
   color:#777;
 }
 
-.nope a:hover {
+a:hover .nope {
   border-bottom: 1px solid #444;
   text-decoration: line-through;
 }
