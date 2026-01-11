@@ -21,6 +21,21 @@
     max-width: 150px;
   }
 
+  .tab-content #nav-basics {
+    overflow: scroll!important;
+  }
+
+  .tab-content #nav-appearance {
+    overflow: scroll!important;
+  }
+
+  .tab-content #nav-personality {
+    overflow: scroll!important;
+  }
+
+  .tab-content #nav-background {
+    overflow: scroll!important;
+  }
 
   #infoRight {
     order: 2;
@@ -34,7 +49,19 @@
     height: auto;
   }
 
-  .tab-content #nav-basics, .tab-content #nav-appearance, .tab-content #nav-personality, .tab-content #nav-background {
+  .tab-content #nav-basics {
+    overflow: scroll!important;
+  }
+
+  .tab-content #nav-appearance {
+    overflow: scroll!important;
+  }
+
+  .tab-content #nav-personality {
+    overflow: scroll!important;
+  }
+
+  .tab-content #nav-background {
     overflow: scroll!important;
   }
 
@@ -62,7 +89,19 @@
     height: auto;
   }
 
-  .tab-content #nav-basics, .tab-content #nav-appearance, .tab-content #nav-personality, .tab-content #nav-background {
+  .tab-content #nav-basics {
+    overflow: scroll!important;
+  }
+
+  .tab-content #nav-appearance {
+    overflow: scroll!important;
+  }
+
+  .tab-content #nav-personality {
+    overflow: scroll!important;
+  }
+
+  .tab-content #nav-background {
     overflow: scroll!important;
   }
 
