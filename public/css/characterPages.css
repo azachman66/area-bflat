@@ -21,19 +21,19 @@
     max-width: 150px;
   }
 
-  .tab-content #nav-basics {
+  .tab-pane #nav-basics {
     overflow: scroll!important;
   }
 
-  .tab-content #nav-appearance {
+  .tab-pane #nav-appearance {
     overflow: scroll!important;
   }
 
-  .tab-content #nav-personality {
+  .tab-pane #nav-personality {
     overflow: scroll!important;
   }
 
-  .tab-content #nav-background {
+  .tab-pane #nav-background {
     overflow: scroll!important;
   }
 
@@ -49,19 +49,19 @@
     height: auto;
   }
 
-  .tab-content #nav-basics {
+  .tab-pane #nav-basics {
     overflow: scroll!important;
   }
 
-  .tab-content #nav-appearance {
+  .tab-pane #nav-appearance {
     overflow: scroll!important;
   }
 
-  .tab-content #nav-personality {
+  .tab-pane #nav-personality {
     overflow: scroll!important;
   }
 
-  .tab-content #nav-background {
+  .tab-pane #nav-background {
     overflow: scroll!important;
   }
 
@@ -89,19 +89,19 @@
     height: auto;
   }
 
-  .tab-content #nav-basics {
+  .tab-pane #nav-basics {
     overflow: scroll!important;
   }
 
-  .tab-content #nav-appearance {
+  .tab-pane #nav-appearance {
     overflow: scroll!important;
   }
 
-  .tab-content #nav-personality {
+  .tab-pane #nav-personality {
     overflow: scroll!important;
   }
 
-  .tab-content #nav-background {
+  .tab-pane #nav-background {
     overflow: scroll!important;
   }
 
