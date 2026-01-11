@@ -1,0 +1,85 @@
+/* Media Responsiveness */
+
+/* Large screens (desktop) */
+@media (min-width: 1024px) {
+  body {
+    background-color: aquamarine;
+  }
+}
+
+/* Medium screens (tablet) */
+@media (min-width: 768px) and (max-width: 960px) {
+  #mediaLeft {
+    order: 1;
+  }
+
+  #mediaLeft card {
+    max-width: 200px;
+  }
+
+  #mediaLeft audio {
+    max-width: 150px;
+  }
+
+
+  #infoRight {
+    order: 2;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 767px) {
+  .window {
+    width: 90vw;
+    height: auto;
+  }
+
+  .tab-content #nav-basics, .tab-content #nav-appearance, .tab-content #nav-personality, .tab-content #nav-background {
+    overflow: scroll!important;
+  }
+
+  #mediaLeft {
+    order: 1;
+  }
+
+  #mediaLeft card {
+    max-width: 100px;
+  }
+
+  #mediaLeft audio {
+    max-width: 50px;
+  }
+
+  #infoRight {
+    order: 2;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .window {
+    width: 100vw;
+    height: auto;
+  }
+
+  .tab-content #nav-basics, .tab-content #nav-appearance, .tab-content #nav-personality, .tab-content #nav-background {
+    overflow: scroll!important;
+  }
+
+  #mediaLeft {
+    order: 1;
+  }
+
+  #mediaLeft card {
+    max-width: 100px;
+  }
+
+  #mediaLeft audio {
+    max-width: 50px;
+  }
+
+  #infoRight {
+    order: 2;
+  }
+
+}
