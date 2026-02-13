@@ -1,9 +1,9 @@
-body, div, main, section, article {
+/* body, div, main, section, article {
   box-sizing: border-box; 
 }
 
 /* universal background color */
-body {
+/* body {
   background-color: #fff;
   background-image: url('../img/assets/band_room_stock.jpg');
   background-repeat: no-repeat;
@@ -54,6 +54,49 @@ position: absolute;
 }
 
 /* take away margins from the edges of the screen */
-html, body {
+/* html, body {
   margin: 0;
+} */
+
+body, div, main, section, article {
+  box-sizing: border-box; 
+}
+
+/* universal background color */
+body {
+  background-color: #fff;
+}
+
+.imageMap {
+  width: 100vw;
+  height: auto;
+  background: #fff;
+}
+
+/* .links {
+  width: 100vw;
+  height: auto;
+} */
+
+#links a {
+  opacity: 0;
+  stroke: #ffffff;
+  stroke-width: 5;
+  fill: rgba(203, 203, 203, 0.5);
+  transition: all .25s ease-in-out;
+}
+
+#links a:hover {
+  opacity: 1;
+}
+
+.pop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 20vw;
+  background-color: #00000083;
+  border: 3px solid #333;
+  border-radius: 5px;
 }
