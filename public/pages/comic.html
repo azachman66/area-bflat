@@ -19,18 +19,22 @@
   <div align="center">
     <!-- header that has the logo image and top page navigation. don't forget to put this on every page -->
     <div class="writeHeader"></div>
-
+    
+    <div class="writeNavBar"></div>
     <!-- make sure that if you want to turn on automatically scrolling to the top of the comic when you load a new page, keep the id of this div and the variable "navScrollTo" in showcomic.js the same-->
     <div id="showComic">
 
       <!-- write the title of the page. -->
       <div class="writePageTitle"></div>
-      <!-- write top navigation -->
-      <div class="writeNav"></div>
+      
+        <div class="comicBox">
+          <div class="comicPage">
       <!-- write the current page of your comic -->
-      <div class="writePageClickable"></div>
+            <div class="writePageClickable"></div>
+          </div>
       <!-- write bottom navigation -->
-      <div class="writeNav"></div>
+            <div class="writeNav"></div>
+        </div>
       
     </div>
   </div>
@@ -48,6 +52,7 @@
     <script src="../js/comic_settings.js" defer></script>
     <script src="../js/comic_show.js" defer></script>
     <script src="../js/comic_header.js" defer></script>
+    <script src="../js/comic_navBar.js" defer></script>
     <script src="../js/comic_footer.js" defer></script>
   </body>
 </html>

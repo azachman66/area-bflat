@@ -14,6 +14,17 @@ body {
     background-size: cover;
 }
 
+.comicBox {
+    background-color: #fff;
+    width: 60vw;
+    height: auto;
+}
+
+.comicBox .comicPage div {
+    width: calc(60vw - 15px);
+    height: calc(100vw - 15px);
+}
+
 .imageMap {
   width: 100vw;
   height: auto;
