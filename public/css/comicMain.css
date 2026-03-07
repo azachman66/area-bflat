@@ -18,14 +18,15 @@ body {
     background-color: #fff;
     width: 60vw;
     height: auto;
+    padding: 30px;
 }
 
-.comicBox .comicPage div {
+.comicBox .comicPage img {
     width: calc(60vw - 15px);
     height: calc(100vw - 15px);
 }
 
-.imageMap {
+/* .imageMap {
   width: 100vw;
   height: auto;
   background: #fff;
@@ -36,7 +37,7 @@ body {
   height: auto;
 } */
 
-#links a {
+/* #links a {
   opacity: 0;
   stroke: #ffffff;
   stroke-width: 5;
@@ -57,4 +58,4 @@ body {
   background-color: #00000083;
   border: 3px solid #333;
   border-radius: 5px;
-}
+} */ */
