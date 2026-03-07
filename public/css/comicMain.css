@@ -5,10 +5,13 @@ body, div, main, section, article {
 /* universal background color */
 body {
     background-color: #fff;
-  background-image: url('../img/assets/AB-FLAT_comic.png');
-  background-repeat: no-repeat;
-  background-position: top middle;
-  background-size: cover;
+}
+
+.background {
+    background-image: url('../img/assets/AB-FLAT_comic.png');
+    background-repeat: no-repeat;
+    background-position: top middle;
+    background-size: cover;
 }
 
 .imageMap {
