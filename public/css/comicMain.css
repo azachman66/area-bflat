@@ -15,15 +15,21 @@ body {
 }
 
 header {
-
+width: 25vw;
+height: auto;
+margin-bottom: 20px;
 }
 
 nav {
     padding: 30px;
     text-align: left;
+    list-style-type: none;
+    display: block;
 }
 
 nav ul li {
+    list-style-type: none;
+    text-decoration: none;
     background-color: yellow;
     padding: 10px;
     font-size: 24px;
