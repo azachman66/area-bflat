@@ -15,7 +15,7 @@ const maxpg = 1; //the current number of pages your comic has in total. this DOE
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
-const folder = "/img/comics"; //directory of the folder where you keep all the comics
+const folder = "img/comics"; //directory of the folder where you keep all the comics
 const image = "pg"; //what you'll name all your comic pages
 const imgPart = "_" //special character(s) you put after the page number to subdivide pages into multiple image files (ie pg2_1, pg2_2, etc)
 const ext = "png"; //file extension of your comic pages
@@ -50,7 +50,7 @@ const pgData = [
     {
         pgNum: 1, //what page number it is
         title: "testing", //the title of the page (leaving this blank will default it to "Page X")
-        date: writeDate(2026, 3, 06), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
+        date: writeDate(2026, 3, 6), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
         altText: "Here's some alt text!", //the alt text (mouse over text) for this particular comic. put nothing inbetween the quotes for no alt text
         imageFiles: 1, //how many image files this page is split into
         authorNotes: `
