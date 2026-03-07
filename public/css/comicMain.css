@@ -20,12 +20,9 @@ header {
 
 nav {
     padding: 30px;
+    text-align: left;
 }
 
-
-nav ul {
-    text-decoration: none;
-}
 nav ul li {
     background-color: yellow;
     padding: 10px;
