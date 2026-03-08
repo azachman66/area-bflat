@@ -1,20 +1,238 @@
+
+            /* user styles */
+
+            /* styles are what change the color and sizes of stuff on your site. */
+
+            /* these are variables that are being used in the code
+    these tended to confuse some people, so I only kept 
+    the images as variables */
+
+            :root {
+                --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+                --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
+
+                /* colors */
+                --content: #43256E;
+            }
+
+            /* if you have the URL of a font, you can set it below */
+            /* feel free to delete this if it's not your vibe */
+
+            /* this seems like a lot for just one font and I would have to agree 
+    but I wanted to include an example of how to include a custom font.
+    If you download a font file you can upload it onto your Neocities
+    and then link it! Many fonts have separate files for each style
+    (bold, italic, etc. T_T) which is why there are so many!
+    
+    */
+
+            
+.caveat-button {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+                font-weight: bold;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+                font-style: italic;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            body {
+                font-family: "Merriweather", serif;
+                margin: 0 auto;
+                background-color: #605640;
+                /* you can delete the line below if you'd prefer to not use an image */
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* below this line is CSS for the layout */
+
+            /* this is a CSS comment
+    to uncomment a line of CSS, remove the * and the /
+    before and after the text */
+
+
+            /* the "container" is what wraps your entire website */
+            /* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+            #container {
+                max-width: 100%;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+                margin: 0 auto;
+                /* this centers the entire page */
+            }
+
+            /* the area below is for all links on your page
+    EXCEPT for the navigation */
+            #container a {
+                color: #1f1a02;
+                font-weight: bold;
+                text-decoration: none;
+                /* if you want to remove the underline
+      you can add a line below here that says:
+      text-decoration:none; */
+            }
+/* 
+            #header {
+                width: 100%;
+                background-color: #5e4e8c;
+                /* header color here! */
+                /* height: 150px; */
+                /* this is only for a background image! */
+                /* if you want to put images IN the header, 
+      you can add them directly to the <div id="header"></div> element! */
+                /* background-image: var(--header-image);
+                background-size: 100%;
+            } */
+
+            /* navigation section!! */
+            #navbar {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                padding-bottom: 30px;
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            /* this colors BOTH sidebars
+    if you want to style them separately,
+    create styles for #leftSidebar and #rightSidebar */
+            /* aside {
+                background-color: #241445;
+                width: 200px;
+                padding: 20px;
+                font-size: smaller;
+                /* this makes the sidebar text slightly smaller */ */
+
+
+            /* this is the color of the main content area,
+    between the sidebars! */
+            main {
+                background-color: #43256E;
+                margin: 0 auto;
+                padding: 20px;
+                justify-content: center;
+            }
+
+            /* what's this "order" stuff about??
+    allow me to explain!
+    if you're using both sidebars, the "order" value
+    tells the CSS the order in which to display them.
+    left sidebar is 1, content is 2, and right sidebar is 3! */
+
+
+            footer {
+                background-color: rgb(213, 196, 173);
+                /* background color for footer */
+                width: 100vw;
+                height: auto;
+                padding: 10px;
+                text-align: center;
+                /* this centers the footer text */
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #2b2106;
+                font-family: "Caveat", cursive;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            /* this is just a cool box, it's the darker colored one */
+
+            /* CSS for extras */
+
+            /* BELOW THIS POINT IS MEDIA QUERY */
+
+            /* so you wanna change the width of your page? 
+    by default, the container width is 900px.
+    in order to keep things responsive, take your new height,
+    and then subtrack it by 100. use this new number as the 
+    "max-width" value below
+    */
+
+            @media only screen and (max-width: 850px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+/* 
+                aside {
+                    width: 100%;
+                } */
+
+                /* the order of the items is adjusted here for responsiveness!
+      since the sidebars would be too small on a mobile device.
+      feel free to play around with the order!
+      */
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                #navbar ul {
+                    flex-wrap: wrap;
+                }
+            }
+
+
+
 body, div, main, section, article {
   box-sizing: border-box; 
 }
 
-/* universal background color */
 body {
-    background-color: #676767;
+    background-image: url("../img/assets/4667747069_4bf0bb472b_o.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
 }
 
-.background {
+/* .background {
     background-image: url('../img/assets/AB-FLAT_comic.png');
     background-repeat: no-repeat;
     background-position: top middle;
     background-size: cover;
-}
+} */
 
-.container {
+/* .container {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -24,31 +242,34 @@ body {
     background-color:#676767;
     width: 50vw;
     align-content: center;
-}
+} */
 
-header img{
-width: 200px;
+header img {
+width: 100vw;
 height: auto;
 margin-bottom: 20px;
 background-color: transparent;
 }
 
-nav {
-    background-color: transparent;
-    text-align: left;
-    position: fixed;
+/* nav {
+    background-color: #fff67c;
+    text-align: center;
+    position: sticky;
     top: 0;
     left: 0;
-    width: 200px;
-}
+    width: 100%;
+    display: block;
+    padding: 10px;
+} */
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
+  display: flex;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
 }
-
+/*
 li a {
   display: block;
   background-color: rgb(255, 255, 0);
@@ -59,21 +280,33 @@ li a {
 }
 
 /* Change the link and background color on hover */
-li a:hover {
-  background-color: #fff67c;
+/* a:hover {
+  background-color: #665f00;
   color: rgb(68, 68, 68);
-}
+} */
 
 .comicBox {
-    background-color: #fff;
-    width: 80vw;
+    width: 75vw;
     height: auto;
     padding: 30px;
     justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: 2px solid #3f2e00;
+    box-shadow: 2px 5px 8px #2b2106;
+}
+
+.comicPage {
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #1f1a02;
 }
 
 .comicBox .comicPage img {
-    max-width: 700px;
+    max-width: 750px;
 }
 
 /* .imageMap {
@@ -109,3 +342,57 @@ li a:hover {
   border: 3px solid #333;
   border-radius: 5px;
 } */
+
+
+.sectContainer {
+ /* border-image-slice: 58 67 80 63 fill;
+border-image-width: 20px 20px 20px 20px;
+border-image-outset: 0px 0px 0px 0px;
+border-image-repeat: stretch stretch; 
+border-image-source: url("../img/assets/notes.jpg");
+border-style: solid; */
+background-color: antiquewhite;
+padding: 30px;
+margin: 30px;
+ border-radius: 10px;
+    border: 2px solid #3f2e00;
+    box-shadow: 2px 5px 8px #2b2106;
+}
+
+.writePageTitle {
+    margin-bottom: 15px;
+    color:#1f1a02;
+    font-family: "Merriweather", serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+button {
+border-image-slice: 20 148 172 80 fill;
+border-image-width: 5px 20px 30px 20px;
+border-image-outset: 0px 0px 0px 0px;
+border-image-repeat: stretch stretch;
+border-image-source: url("../img/assets/imageedit_4_5298380077.png");
+border-style: solid;
+padding: 15px;
+width: 150px;
+height: 80px;
+background-color: transparent;
+color:#000;
+}
+
+button a {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+button a:hover {
+    color: #aaa;
+}
+
+p {
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+}
