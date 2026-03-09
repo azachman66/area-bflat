@@ -1,26 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>AREA B-FLAT | About</title>
-
-    <!-- style -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- Cherry Cream Soda -->
-    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
-    <!-- Open Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-</head>
+    <link rel="preload">
+    <link href="../css/comicMain.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/cc94091a67.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+  </head>
 <body>
     <!-- header -->
-    <div class="writeHeader"></div>
-
-    <div class="subPage clearfix">
+    <div id="container">
+            <div id="headerArea">
+                <div class="writeHeader"></div>
+                <div class="writeNavBar"></div>
+            </div>
+    <div class="sectContainer">
         <h1>About</h1>
         <p>This is an example of how to use the <strong>Rarebit template.</strong> It uses a public domain comic strip called <strong>Teena</strong> that ran in newspapers from 1944 to 1963.</p> 
         
@@ -37,7 +40,8 @@
     <div class="writeFooter"></div>
 
 <!-- at the end of this page we only call the header and footer scripts, because we don't need use any functions from the other scripts. -->
-<script src="js/comic_header.js" defer></script>
-<script src="js/comic_footer.js" defer></script>
+<script src="../js/comic_header.js" defer></script>
+<script src="../js/comic_navBar.js" defer></script>
+<script src="../js/comic_footer.js" defer></script>
 </body>
 </html>

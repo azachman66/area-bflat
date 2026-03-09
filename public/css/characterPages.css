@@ -3,7 +3,12 @@
 /* Large screens (desktop) */
 @media (min-width: 1024px) {
   body {
-    background-color: aquamarine;
+    width: 100vw;
+    background-image: url("../img/assets/computer background.png");
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
