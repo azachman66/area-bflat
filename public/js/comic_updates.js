@@ -103,14 +103,23 @@ function writeDate(year,month,day) { //write date of comic page
 
 // writeBlog("lastfirst", 1, 0);
 
-writeBlog("newUpdate", 1);
+document.addEventListener("DOMContentLoaded", () => {
+    writeBlog("newUpdate", 1);
+});
 
 function writeBlog(divClass, min) {
-    let blogAccord = document.createElement("details");
-    blogAccord.setAttribute("class", "blogDetails");
+    let blogAccord = document.createElement("div");
+    blogAccord.className = "blogDetails";
 
     let getDiv = document.getElementsByClassName(divClass)[0];
+
+    if (!getDiv) {
+        console.error(`No element found with class "${divClass}"`);
+        return;
+    }
+
     getDiv.appendChild(blogAccord);
+}
 
     for (let i = min; i <= maxblog; i++) {
         let detail = document.createElement("details");
