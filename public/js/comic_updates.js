@@ -135,7 +135,7 @@ function writeBlog(divClass, min) {
             if (blogData[i - 1].title) blogTitle = blogData[i - 1].title;
             if (blogData[i - 1].date) blogDate = blogData[i - 1].date;
             if (blogData[i - 1].blogNum) blogNum = blogData[i - 1].blogNum;
-            if (blogData[i - 1].notes) blogNotes = blogData[i - 1].notes;
+            if (blogData[i - 1].blogNotes) blogNotes = blogData[i - 1].blogNotes;
         }
 
         summary.innerHTML = `<strong>${blogTitle}</strong>`;
