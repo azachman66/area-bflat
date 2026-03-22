@@ -117,7 +117,7 @@ function writeBlog(divClass, min) {
     getDiv.appendChild(blogAccord);
 
     // ✅ MOVE LOOP INSIDE FUNCTION
-    for (let i = min; i <= maxblog; i++) {
+    for (let i = maxblog; i >= min; i--) {
         let detail = document.createElement("details");
         blogAccord.appendChild(detail);
 
