@@ -232,11 +232,12 @@ body {
     align-content: center;
 } */
 
-header img {
+header {
 width: 100vw;
 height: auto;
 margin-bottom: 20px;
 background-color: transparent;
+justify-content: center;
 }
 
 /* nav {
