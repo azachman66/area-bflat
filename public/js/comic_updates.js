@@ -115,7 +115,7 @@ function writeBlog(divClass, min, reverseOrder) {
     getDiv.appendChild(blogAccord);
     //make the table from the currently available comics
     for (i = min; i <= max; i++) {
-        let detail = blogAccord.reversed(reverseOrder); //if reverseOrder is set to 0 it'll reverse the order, otherwise it'll display it in regular order
+        let detail = blogAccord.reversed(true); //if reverseOrder is set to 0 it'll reverse the order, otherwise it'll display it in regular order
 
         let summary = detail.insertNewElement("afterbegin");
         let date = detail.insertNewElement("beforeend");
