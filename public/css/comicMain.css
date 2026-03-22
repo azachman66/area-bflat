@@ -364,6 +364,42 @@ margin: 30px;
     font-weight: 900;
 }
 
+details {
+  font-size: 1rem;
+  font-family: "Open Sans", "Calibri", sans-serif;
+  border: solid;
+  padding: 2px 6px;
+  margin-bottom: 1em;
+}
+
+details:first-of-type summary::marker,
+:is(::-webkit-details-marker) {
+  content: "+ ";
+  font-family: monospace;
+  color: red;
+  font-weight: bold;
+}
+
+details[open]:first-of-type summary::marker {
+  content: "− ";
+}
+
+details:last-of-type summary {
+  list-style: none;
+  &::after {
+   content: "+ ";
+  font-family: monospace;
+  color: red;
+  font-weight: bold;
+  }
+  [open] &::after {
+    content: "− ";
+  }
+}
+details:last-of-type summary::-webkit-details-marker {
+  display: none;
+}
+
 button {
 border-image-slice: 20 148 172 80 fill;
 border-image-width: 5px 20px 30px 20px;
