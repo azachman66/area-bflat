@@ -103,47 +103,55 @@ function writeDate(year,month,day) { //write date of comic page
 
 // writeBlog("lastfirst", 1, 0);
 
-writeBlog("update", 1) //writeArchive is for listing a RANGE of pages, take advantage of this by using headers to divide them into chapters or by month
-
-//below this point is stuff you don't really need to pay attention to if you're not super familiar with JS 
+writeBlog("newUpdate", 1);
 
 function writeBlog(divClass, min) {
-    //create a table to put the archive data
     let blogAccord = document.createElement("details");
-    blogAccord.setAttribute("class", "blogAccord"); //set class to blogAccord for css styling
-    let getDiv = document.getElementsByClassName(divClass)[0]; //get div class
+    blogAccord.setAttribute("class", "blogDetails");
+
+    let getDiv = document.getElementsByClassName(divClass)[0];
     getDiv.appendChild(blogAccord);
-    //make the table from the currently available comics
-    for (i = min; i <= maxblog; i++) {
-        let detail = blogAccord.reversed(true); //if reverseOrder is set to 0 it'll reverse the order, otherwise it'll display it in regular order
 
-        let summary = detail.insertNewElement("afterbegin");
-        let date = detail.insertNewElement("beforeend");
+    for (let i = min; i <= maxblog; i++) {
+        let detail = document.createElement("details");
+        blogAccord.appendChild(detail);
 
-        //default values when you don't have page data set
+        let summary = document.createElement("summary");
+        let dateEl = document.createElement("span");
+
+        // default values
         let blogTitle = "Update " + i;
         let blogDate = "";
         let blogNum = "";
 
         if (blogData.length >= i) {
-            //set values to the values indicated in the blogData object if available
-            if (blogData[i - 1].title) {
-                blogTitle = blogData[i - 1].title;
-            }
-            if (blogData[i - 1].date) {
-                blogDate = blogData[i - 1].date;
-            }
-            if (blogData[i - 1].blogNum) {
-                blogNum = blogData[i - 1].blogNum;
-            }
-        };
+            if (blogData[i - 1].title) blogTitle = blogData[i - 1].title;
+            if (blogData[i - 1].date) blogDate = blogData[i - 1].date;
+            if (blogData[i - 1].blogNum) blogNum = blogData[i - 1].blogNum;
+        }
 
-        //draw each row
-        summary.innerHTML = `<summary><strong>${blogTitle}</strong></summary>`;
+        summary.innerHTML = `<strong>${blogTitle}</strong>`;
         summary.setAttribute("class", "summary");
-        blogNotes.innerHTML = ("" + blogNotes + "");
-        date.innerHTML = ("<span> " + date + " </span>");
-        date.setAttribute("class", "date");
-        console.log(i + `created details - ${blogTitle} - ${date}`);
+
+        dateEl.textContent = blogDate;
+        dateEl.setAttribute("class", "date");
+
+        detail.appendChild(summary);
+        detail.appendChild(dateEl);
+
+        console.log(i + ` created details - ${blogTitle} - ${blogDate}`);
     }
 }
+
+document.addEventListener("click", function (e) {
+    if (e.target.tagName === "SUMMARY") {
+        let allDetails = document.querySelectorAll(".blogDetails details");
+        let current = e.target.parentElement;
+
+        allDetails.forEach(d => {
+            if (d !== current) {
+                d.removeAttribute("open");
+            }
+        });
+    }
+});
