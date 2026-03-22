@@ -129,11 +129,13 @@ function writeBlog(divClass, min) {
         let blogTitle = "Update " + i;
         let blogDate = "";
         let blogNum = "";
+        let blogNotes = "";
 
         if (blogData.length >= i) {
             if (blogData[i - 1].title) blogTitle = blogData[i - 1].title;
             if (blogData[i - 1].date) blogDate = blogData[i - 1].date;
             if (blogData[i - 1].blogNum) blogNum = blogData[i - 1].blogNum;
+            if (blogData[i - 1].notes) blogNotes = blogData[i - 1].notes;
         }
 
         summary.innerHTML = `<strong>${blogTitle}</strong>`;
