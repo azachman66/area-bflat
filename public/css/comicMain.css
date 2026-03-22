@@ -237,11 +237,10 @@ body {
 }
 
 header {
-display: flex;
+display: block;
 height: auto;
-margin: 0 auto;
 background-color: transparent;
-justify-content: center;
+margin: 0 auto;
 }
 
 /* nav {
