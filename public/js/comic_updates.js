@@ -123,6 +123,7 @@ function writeBlog(divClass, min) {
 
         let summary = document.createElement("summary");
         let dateEl = document.createElement("span");
+        let notesEl = document.createElement("div");
 
         // defaults
         let blogTitle = "Update " + i;
@@ -138,10 +139,14 @@ function writeBlog(divClass, min) {
         summary.innerHTML = `<strong>${blogTitle}</strong>`;
         summary.className = "summary";
 
+        notesEl.innerHTML = `${blogNotes}`;
+        notesEl.className = "notes";
+
         dateEl.textContent = blogDate;
         dateEl.className = "date";
 
         detail.appendChild(summary);
+        detail.appendChild(notesEl);
         detail.appendChild(dateEl);
 
         console.log(i + ` created details - ${blogTitle} - ${blogDate}`);
