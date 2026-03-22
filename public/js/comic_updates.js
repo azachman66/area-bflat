@@ -150,7 +150,6 @@ function writeBlog(divClass, min) {
 
         console.log(i + ` created details - ${blogTitle} - ${blogDate}`);
     }
-}
 
 document.addEventListener("click", function (e) {
     if (e.target.tagName === "SUMMARY") {
