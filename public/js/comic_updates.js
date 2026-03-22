@@ -101,11 +101,7 @@ function writeDate(year,month,day) { //write date of comic page
 //     -1, //if set to 0, list is displayed "latest first". if set to -1, list is displayed chronologically
 // );
 
-// writeBlog("lastfirst", 1, 0);
-
-document.addEventListener("DOMContentLoaded", () => {
-    writeBlog("newUpdate", 1);
-});
+writeBlog("writeBlog", 1);
 
 function writeBlog(divClass, min) {
     let blogAccord = document.createElement("div");
@@ -119,8 +115,8 @@ function writeBlog(divClass, min) {
     }
 
     getDiv.appendChild(blogAccord);
-}
 
+    // ✅ MOVE LOOP INSIDE FUNCTION
     for (let i = min; i <= maxblog; i++) {
         let detail = document.createElement("details");
         blogAccord.appendChild(detail);
@@ -128,7 +124,7 @@ function writeBlog(divClass, min) {
         let summary = document.createElement("summary");
         let dateEl = document.createElement("span");
 
-        // default values
+        // defaults
         let blogTitle = "Update " + i;
         let blogDate = "";
         let blogNum = "";
@@ -140,26 +136,14 @@ function writeBlog(divClass, min) {
         }
 
         summary.innerHTML = `<strong>${blogTitle}</strong>`;
-        summary.setAttribute("class", "summary");
+        summary.className = "summary";
 
         dateEl.textContent = blogDate;
-        dateEl.setAttribute("class", "date");
+        dateEl.className = "date";
 
         detail.appendChild(summary);
         detail.appendChild(dateEl);
 
         console.log(i + ` created details - ${blogTitle} - ${blogDate}`);
     }
-
-document.addEventListener("click", function (e) {
-    if (e.target.tagName === "SUMMARY") {
-        let allDetails = document.querySelectorAll(".blogDetails details");
-        let current = e.target.parentElement;
-
-        allDetails.forEach(d => {
-            if (d !== current) {
-                d.removeAttribute("open");
-            }
-        });
-    }
-});
+}
