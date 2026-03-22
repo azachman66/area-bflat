@@ -232,9 +232,16 @@ body {
     align-content: center;
 } */
 
+#headerArea {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 header {
 display: flex;
 height: auto;
+margin: 0 auto;
 background-color: transparent;
 justify-content: center;
 }
