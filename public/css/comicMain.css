@@ -233,10 +233,8 @@ body {
 } */
 
 header {
-width: 100vw;
 display: flex;
 height: auto;
-margin-bottom: 20px;
 background-color: transparent;
 justify-content: center;
 }
