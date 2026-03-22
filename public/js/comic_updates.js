@@ -4,7 +4,7 @@
 
 //comic_archive has more settings pertaining to the archive page, and comic_show has settings pertaining to the main place that pages of your comic are displayed.
 
-let blog = Number(findGetParameter("blog")); //make "pg" mean the current page number (this line doesnt work unless I put it here, if you're inexperienced with js dont worry about it)
+// let blog = Number(findGetParameter("blog")); //make "pg" mean the current page number (this line doesnt work unless I put it here, if you're inexperienced with js dont worry about it)
 
 ////////////////////////
 //VARIABLES FOR TWEAKING
@@ -14,7 +14,7 @@ let blog = Number(findGetParameter("blog")); //make "pg" mean the current page n
 const maxblog = 3; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files. 
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
-if (blog == 0) {blog = maxblog;} //display MOST RECENT COMIC when the webpage is loaded. if you want to instead have the FIRST COMIC displayed first, change maxpg to 1.
+// if (blog == 0) {blog = maxblog;} //display MOST RECENT COMIC when the webpage is loaded. if you want to instead have the FIRST COMIC displayed first, change maxpg to 1.
 
 //pgData holds all the parameters for each of your pages. copypaste this and fill out accordingly:
 /* 
