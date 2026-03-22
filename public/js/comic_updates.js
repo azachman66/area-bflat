@@ -103,18 +103,18 @@ function writeDate(year,month,day) { //write date of comic page
 
 // writeBlog("lastfirst", 1, 0);
 
-writeBlog("update", 1, 0) //writeArchive is for listing a RANGE of pages, take advantage of this by using headers to divide them into chapters or by month
+writeBlog("update", 1) //writeArchive is for listing a RANGE of pages, take advantage of this by using headers to divide them into chapters or by month
 
 //below this point is stuff you don't really need to pay attention to if you're not super familiar with JS 
 
-function writeBlog(divClass, min, reverseOrder) {
+function writeBlog(divClass, min) {
     //create a table to put the archive data
     let blogAccord = document.createElement("details");
     blogAccord.setAttribute("class", "blogAccord"); //set class to blogAccord for css styling
     let getDiv = document.getElementsByClassName(divClass)[0]; //get div class
     getDiv.appendChild(blogAccord);
     //make the table from the currently available comics
-    for (i = min; i <= max; i++) {
+    for (i = min; i <= maxblog; i++) {
         let detail = blogAccord.reversed(true); //if reverseOrder is set to 0 it'll reverse the order, otherwise it'll display it in regular order
 
         let summary = detail.insertNewElement("afterbegin");
