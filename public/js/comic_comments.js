@@ -20,3 +20,5 @@ function loadHyvorTalk() {
 
     document.getElementById("comments-wrap").appendChild(comments);
 };
+
+document.addEventListener("DOMContentLoaded", loadHyvorTalk);
