@@ -2,7 +2,7 @@ body {
     width: 100vw;
     background-image: url("../img/assets/computer background.png");
     background-position: center;
-    background:fixed;
+    background-attachment: fixed;
 }
 
 /* .screen {
