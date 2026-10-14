@@ -61,5 +61,63 @@
 </svg>
 </div>
 </body>
+<script>
 
+// const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+// const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+
+
+const popover = new bootstrap.Popover('.popover-dismiss', {
+  trigger: 'focus'
+})
+
+
+// const chairs = document.getElementById('chairs');
+// chairs.addEventListener('mouseover', () => {
+//   chairs.style.cursor = 'help';
+// });
+// chairs.addEventListener('mouseout', () => {
+//   chairs.title = '';
+// });
+
+// function chairsPopover() {
+// chairs.addEventListener('click', () => {
+//   const chairsPop = document.getElementById('chairsPop');
+//   chairsPop.style.display = 'block';
+// });
+// };
+
+// const poster = document.getElementById('poster');
+// poster.addEventListener('mouseover', () => {
+//   poster.title = 'READ CLOSER?';
+//   poster.style.cursor = 'zoom-in';
+// });
+// poster.addEventListener('mouseout', () => {
+//   poster.title = '';
+// });
+
+// const board = document.getElementById('board');
+// board.addEventListener('mouseover', () => {
+//   // Code to execute when mouse enters the element (and its children)
+//   board.title = 'TAKE A LOOK?';
+//   board.style.cursor = 'zoom-in';
+// });
+// board.addEventListener('mouseout', () => {
+//   // Code to execute when mouse leaves the element (and its children)
+//   board.title = ''; // Reset to original
+// });
+
+// function boardPopover() {
+// board.addEventListener('click', () => {
+//   const boardPop = document.getElementById('boardPop');
+//   boardPop.style.display = 'block';
+// });
+// };
+
+// $(document).ready(function() {
+//     $('map').imageMapResize();
+// });
+</script>
 </html>
