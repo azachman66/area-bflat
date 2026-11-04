@@ -362,8 +362,8 @@ margin: 30px;
 
 aside {
     background-color:#fff8e8;
-    padding: 20px;
-    margin: 30px;
+    padding: 20px 20px 50px 20px;
+    margin: 30px 30px 50px 30px;
     border-radius: 10px;
     border: 2px solid #3f2e00;
     box-shadow: 2px 5px 8px #2b2106;
