@@ -81,6 +81,11 @@
       you can add a line below here that says:
       text-decoration:none; */
             }
+
+            #container a:hover {
+                text-decoration: underline;
+                font-style: italic;
+            }
 /* 
             #header {
                 width: 100%;
@@ -412,3 +417,4 @@ p {
     font-family: "Merriweather", serif;
     font-size: 14px;
 }
+
