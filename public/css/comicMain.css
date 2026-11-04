@@ -360,6 +360,18 @@ margin: 30px;
     box-shadow: 2px 5px 8px #2b2106;
 }
 
+aside {
+    background-color:#fff8e8;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid #3f2e00;
+    box-shadow: 2px 5px 8px #2b2106;
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
 .writePageTitle {
     margin-bottom: 15px;
     color:#1f1a02;
